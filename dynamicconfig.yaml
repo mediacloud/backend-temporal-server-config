@@ -13,6 +13,11 @@ frontend.historyMgrNumConns:
 frontend.throttledLogRPS:
 - value: 20
   constraints: {}
+
+# https://github.com/firdaus/temporal-python-sdk/issues/14
+frontend.keepAliveMaxConnectionAge:
+  - value: 87600h # 10 years
+
 history.historyMgrNumConns:
 - value: 50
   constraints: {}
