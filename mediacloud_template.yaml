@@ -16,7 +16,7 @@ persistence:
 
                 # We skip the PgBouncer and connect directly as PgBouncer's
                 # support is not too well documented
-                connectAddr: "temporal-postgresql:5432"
+                connectAddr: "${MC_TEMPORAL_POSTGRESQL_HOST}:5432"
 
                 connectProtocol: "tcp"
                 user: "temporal"
@@ -31,7 +31,7 @@ persistence:
             sql:
                 pluginName: "postgres"
                 databaseName: "temporal_visibility"
-                connectAddr: "temporal-postgresql:5432"
+                connectAddr: "${MC_TEMPORAL_POSTGRESQL_HOST}:5432"
                 connectProtocol: "tcp"
                 user: "temporal"
                 password: "temporal"
