@@ -17,6 +17,8 @@ frontend.throttledLogRPS:
 # https://github.com/firdaus/temporal-python-sdk/issues/14
 frontend.keepAliveMaxConnectionAge:
   - value: 87600h # 10 years
+frontend.keepAliveTime:
+  - value: 87600h # 10 years
 
 history.historyMgrNumConns:
 - value: 50
